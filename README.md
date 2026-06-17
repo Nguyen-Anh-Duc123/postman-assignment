@@ -76,25 +76,3 @@ pm.test("Kiểm tra mã trạng thái là 200", function () {
 pm.test("Thời gian phản hồi dưới 500ms", function () {
     pm.expect(pm.response.responseTime).to.be.below(500);
 });
-4.3. Kiểm thử tự động hàng loạt với Collection Runner
-Để đảm bảo tất cả các kịch bản kiểm thử đều hoạt động ổn định và không phát sinh lỗi bất ngờ khi chạy liên tục, tính năng Collection Runner đã được kích hoạt để quét toàn bộ thư mục bài tập.
-
-Hình ảnh minh họa báo cáo tổng hợp từ Collection Runner (Errors = 0):
-
-💾 5. HƯỚNG DẪN REVIEW BÀI TẬP (DÀNH CHO NGƯỜI CHẤM BÀI)
-Để kiểm tra trực tiếp các cấu hình và kịch bản test trên máy tính cá nhân, thầy/cô có thể thực hiện theo các bước sau:
-
-Tải file file dữ liệu gốc My Collection.postman_collection.json đính kèm trong Repository này về máy.
-
-Mở ứng dụng Postman, chọn nút Import ở góc trên cùng bên trái và tải file .json vừa download lên.
-
-Toàn bộ cấu trúc thư mục, đường dẫn API và mã nguồn Test Scripts sẽ tự động được phục hồi chính xác 100%.
-
-📝 6. KẾT LUẬN VÀ BÀI HỌC KINH NGHIỆM
-Qua bài tập thực hành này, sinh viên đã đạt được các mục tiêu sau:
-
-Sử dụng thành thạo giao diện và các tính năng cốt lõi của công cụ Postman.
-
-Hiểu sâu hơn về cấu trúc của giao thức HTTP, cách đọc dữ liệu trả về kiểu JSON và ý nghĩa của các mã Status Code.
-
-Bước đầu làm quen với tư duy viết Code kiểm thử tự động (Automation Testing), giúp tối ưu hóa thời gian và nâng cao độ chính xác so với việc kiểm thử thủ công (Manual Testing).
